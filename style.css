@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+}
+
+.container {
+    width: 400px;
+    padding: 25px;
+    border-radius: 15px;
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(15px);
+    color: white;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.input-box {
+    position: relative;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+
+.suggestions {
+    margin-top: 10px;
+    max-height: 200px;
+    overflow-y: auto;
+    border-radius: 10px;
+}
+
+.suggestions div {
+    padding: 10px;
+    cursor: pointer;
+    background: rgba(255,255,255,0.2);
+    margin-bottom: 5px;
+    border-radius: 8px;
+    transition: 0.2s;
+}
+
+.suggestions div:hover,
+.active {
+    background: rgba(255,255,255,0.4);
+}
+
+.highlight {
+    color: yellow;
+    font-weight: bold;
+}
+
+.loader {
+    text-align: center;
+    margin-top: 10px;
+    display: none;
+}
